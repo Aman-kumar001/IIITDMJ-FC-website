@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/IIITDMJ-FC-website/static/css/main.67dd13d5.chunk.css",
-    "main.js": "/IIITDMJ-FC-website/static/js/main.dda6c72f.chunk.js",
-    "main.js.map": "/IIITDMJ-FC-website/static/js/main.dda6c72f.chunk.js.map",
+    "main.js": "/IIITDMJ-FC-website/static/js/main.a08be8ce.chunk.js",
+    "main.js.map": "/IIITDMJ-FC-website/static/js/main.a08be8ce.chunk.js.map",
     "runtime-main.js": "/IIITDMJ-FC-website/static/js/runtime-main.ccb340b8.js",
     "runtime-main.js.map": "/IIITDMJ-FC-website/static/js/runtime-main.ccb340b8.js.map",
     "static/css/2.29aa199f.chunk.css": "/IIITDMJ-FC-website/static/css/2.29aa199f.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.29aa199f.chunk.css",
     "static/js/2.38cd70e9.chunk.js",
     "static/css/main.67dd13d5.chunk.css",
-    "static/js/main.dda6c72f.chunk.js"
+    "static/js/main.a08be8ce.chunk.js"
   ]
 }
