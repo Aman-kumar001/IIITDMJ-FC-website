@@ -1,9 +1,10 @@
-import React from 'react'
+import React , {useEffect, useState} from 'react'
 import { Typography, Grid, makeStyles } from '@material-ui/core'
 
 const useStyles=makeStyles({
     root:{
         height:"200vh",
+        marginLeft:"120px",
         background:"green"
     }
 })

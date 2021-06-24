@@ -5,7 +5,7 @@ import trail2 from "../media/trial2.jpg"
 const style=makeStyles({
     gallery:{
         width:"100%",
-        marginLeft:"120px",
+        marginLeft:"120.1px",
         backgroundColor:"red",
         marginTop:"0",
         overflow:"hidden",
@@ -47,7 +47,7 @@ const Gallery = ({width}) => {
         wheel: true,
     };
     return ( 
-        <div className={classes.gallery} style={{width:`${width-138}px`}}>
+        <div className={classes.gallery} style={{width:`${width-137.5}px`}}>
             <div className={classes.heading}><h1>GALLERY</h1></div>
             <Slider {...settings}>
                 <div className="slide img">
