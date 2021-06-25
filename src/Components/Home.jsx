@@ -3,7 +3,7 @@ import { Typography, Grid, makeStyles } from '@material-ui/core'
 
 const useStyles=makeStyles({
     root:{
-        height:"200vh",
+        height:"100vh",
         marginLeft:"120px",
         background:"green"
     }
