@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/IIITDMJ-FC-website/static/css/main.67dd13d5.chunk.css",
-    "main.js": "/IIITDMJ-FC-website/static/js/main.18470f3b.chunk.js",
-    "main.js.map": "/IIITDMJ-FC-website/static/js/main.18470f3b.chunk.js.map",
+    "main.css": "/IIITDMJ-FC-website/static/css/main.92273d8e.chunk.css",
+    "main.js": "/IIITDMJ-FC-website/static/js/main.22865480.chunk.js",
+    "main.js.map": "/IIITDMJ-FC-website/static/js/main.22865480.chunk.js.map",
     "runtime-main.js": "/IIITDMJ-FC-website/static/js/runtime-main.718d75b8.js",
     "runtime-main.js.map": "/IIITDMJ-FC-website/static/js/runtime-main.718d75b8.js.map",
     "static/css/2.29aa199f.chunk.css": "/IIITDMJ-FC-website/static/css/2.29aa199f.chunk.css",
-    "static/js/2.bb4be4b3.chunk.js": "/IIITDMJ-FC-website/static/js/2.bb4be4b3.chunk.js",
-    "static/js/2.bb4be4b3.chunk.js.map": "/IIITDMJ-FC-website/static/js/2.bb4be4b3.chunk.js.map",
+    "static/js/2.47cac0ac.chunk.js": "/IIITDMJ-FC-website/static/js/2.47cac0ac.chunk.js",
+    "static/js/2.47cac0ac.chunk.js.map": "/IIITDMJ-FC-website/static/js/2.47cac0ac.chunk.js.map",
     "static/js/3.96847242.chunk.js": "/IIITDMJ-FC-website/static/js/3.96847242.chunk.js",
     "static/js/3.96847242.chunk.js.map": "/IIITDMJ-FC-website/static/js/3.96847242.chunk.js.map",
     "index.html": "/IIITDMJ-FC-website/index.html",
     "static/css/2.29aa199f.chunk.css.map": "/IIITDMJ-FC-website/static/css/2.29aa199f.chunk.css.map",
-    "static/css/main.67dd13d5.chunk.css.map": "/IIITDMJ-FC-website/static/css/main.67dd13d5.chunk.css.map",
-    "static/js/2.bb4be4b3.chunk.js.LICENSE.txt": "/IIITDMJ-FC-website/static/js/2.bb4be4b3.chunk.js.LICENSE.txt",
+    "static/css/main.92273d8e.chunk.css.map": "/IIITDMJ-FC-website/static/css/main.92273d8e.chunk.css.map",
+    "static/js/2.47cac0ac.chunk.js.LICENSE.txt": "/IIITDMJ-FC-website/static/js/2.47cac0ac.chunk.js.LICENSE.txt",
     "static/media/logo-football.0caf2372.svg": "/IIITDMJ-FC-website/static/media/logo-football.0caf2372.svg",
     "static/media/trial.5396a3ab.JPG": "/IIITDMJ-FC-website/static/media/trial.5396a3ab.JPG",
     "static/media/trial2.5fc408ac.jpg": "/IIITDMJ-FC-website/static/media/trial2.5fc408ac.jpg"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.718d75b8.js",
     "static/css/2.29aa199f.chunk.css",
-    "static/js/2.bb4be4b3.chunk.js",
-    "static/css/main.67dd13d5.chunk.css",
-    "static/js/main.18470f3b.chunk.js"
+    "static/js/2.47cac0ac.chunk.js",
+    "static/css/main.92273d8e.chunk.css",
+    "static/js/main.22865480.chunk.js"
   ]
 }
