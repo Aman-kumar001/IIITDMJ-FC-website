@@ -6,15 +6,16 @@ const style=makeStyles({
     gallery:{
         width:"100%",
         marginLeft:"120.1px",
-        backgroundColor:"red",
+        backgroundColor:"green",
         marginTop:"0",
         overflow:"hidden",
     },
     heading:{
         textAlign:"center",
-        fontSize:"30px",
+        fontSize:"50px",
         marginTop:"0px",
-        marginBottom:"-30px"
+        paddingTop:"20px",
+        fontWeight:"lighter"
     },
 })
 
@@ -48,7 +49,7 @@ const Gallery = ({width}) => {
     };
     return ( 
         <div className={classes.gallery} style={{width:`${width-137.5}px`}}>
-            <div className={classes.heading}><h1>GALLERY</h1></div>
+            <div><h1 className={classes.heading}>GALLERY</h1></div>
             <Slider {...settings}>
                 <div className="slide img">
                     <h1>1</h1>

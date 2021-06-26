@@ -1,16 +1,25 @@
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { useState } from "react";
 import ReplayIcon from '@material-ui/icons/Replay';
+import { makeStyles } from '@material-ui/core';
+const styles=makeStyles({
+    container:{
+        margin:"auto",
+
+    }
+})
 
 const Game = () => {
-
+    const classes=styles();
     const[gk,setGk]=useState((Math.floor(Math.random()*100000))%3)
     const[user,setUser]=useState(Number);
     const[click,setClick]=useState(false);
+    const[play,setplay]=useState(false);
 
     return ( 
         <div className="game">
-            <svg className="football" width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className={classes.container}>
+            <svg className="football" width="100%" height="50%" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="game">
                 <path id="Vector" d="M17.1726 21.9837C18.7979 33.8538 30.1969 43.2529 32.9014 54.9766C33.2404 56.5136 33.4477 58.0699 33.5218 59.633C33.9106 66.366 32.3596 73.2379 33.1591 79.9822C34.649 92.6296 43.5925 102.513 54.9478 111.079C63.5375 117.541 73.5078 123.227 82.6785 128.728C106.027 142.746 127.925 160.444 137.515 183.493C143.907 198.863 144.396 215.566 149.089 231.383C153.781 247.2 164.468 263.384 182.53 268.428C201.916 273.842 223.276 264.815 243.226 268.383C264.634 272.213 279.817 289.603 300.941 294.515C327.781 300.756 354.528 285.42 382.08 282.224C395.31 280.688 408.775 281.991 422.075 281.007C436.88 279.901 451.215 275.986 464.049 269.547C468.418 267.342 472.835 264.635 474.867 260.632C476.614 257.173 476.348 253.23 475.81 249.487C473.801 235.592 468.715 220.489 476.715 208.277C484.094 197.012 501.977 188.953 499.325 176.235C497.73 168.578 488.974 163.797 480.857 160.369C464.114 153.298 446.28 147.763 431.315 138.214C420.611 131.372 411.392 121.826 407.46 111.09C405.848 106.798 405.184 102.284 405.503 97.7817C406.053 90.6844 408.911 82.716 403.93 77.0344C401.771 74.571 398.464 73.0577 395.139 71.9011C382.6 67.5451 368.671 67.2935 355.634 64.1992C351.164 63.1504 346.868 61.616 342.85 59.633C334.898 55.675 328.497 49.8433 326.951 42.2315C326.046 37.7704 326.85 32.9 324.259 28.957C319.89 22.2728 311.252 19.479 301.605 18.5703C289.665 17.4437 276.142 19.2049 267.09 20.0723L266.185 20.1549C254.559 21.1951 243.029 18.9833 231.7 15.6487C219.466 12.0776 207.508 7.2184 195.873 3.76365C194.781 3.4382 193.692 3.12652 192.605 2.82861C184.112 0.502429 175.416 -1.23674 166.6 -2.37229C154.168 -3.9807 141.566 -4.39883 129.026 -3.619C122.666 -3.22516 116.338 -2.51803 110.073 -1.50109C108.232 -1.20068 106.394 -0.878987 104.559 -0.536016C93.8896 1.42793 83.2771 3.82748 72.3937 3.97018C71.6116 3.97018 70.8252 3.97018 70.0431 3.97018C57.0625 3.77867 43.7892 0.943519 31.4727 4.36823C25.8715 5.93413 20.5018 9.01336 18.2474 13.6848C16.9935 16.2871 16.7925 19.1899 17.1726 21.9837Z" fill="#6C63FF"/>
                 <path id="Vector_2" d="M434.245 28.9035V174.6L425.507 169.718V28.9035H420.264L418.079 164.837L409.778 159.579L415.458 27.0259" stroke="#3E3434" stroke-miterlimit="10"/>
@@ -179,12 +188,13 @@ const Game = () => {
                 </svg>
 
                 {/* ball here */}
-                <svg  
+                
+            { play==true && <svg  
                 // className={(click==true && user!==gk)?(user==0?"ballLeft":(user==1?"ballCenter":"ballRight")):"ball"}
                 
                 className={click===true?(user!==gk?(user==0?"ballLeft":(user==1?"ballCenter":"ballRight")):(user==0?"saveLeft":(user==1?"saveCenter":"saveRight"))):"ball"}
 
-                width="113" height="113" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                width="10%" height="10%" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
                     <circle cx="56.4279" cy="53" r="39.5" fill="white" stroke="black"/>
                     <path d="M25.4166 37.2697C25.9527 32.361 26.818 29.6057 29.4616 24.6854C34.6492 21.2095 37.7713 19.7116 43.3942 17.4944C46.27 20.0985 47.5964 21.8579 49.6863 25.5843C44.5446 30.6804 41.9052 33.4287 37.5515 38.1685C32.8189 38.1258 30.1628 37.9928 25.4166 37.2697Z" fill="black"/>
@@ -197,13 +207,13 @@ const Game = () => {
                     <path d="M46.9624 89.8854C45.1936 90.529 43.8639 90.5057 40.6975 89.5414C45.4712 91.1574 48.0331 91.7615 52.4171 92.3259C50.3077 91.7611 49.1201 91.3348 46.9624 89.8854Z" fill="black"/>
                     <path d="M22.7199 66.9326C25.9905 69.5389 28.7772 70.1959 35.3042 70.0786M37.5514 38.1685C37.8791 45.7552 39.227 49.6386 42.9447 56.1461M25.4166 37.2697C21.0407 41.9546 19.4224 45.1401 17.7761 51.6517M49.6862 25.5843C56.5543 26.3928 60.5012 27.3162 67.6638 29.6292M69.911 15.6966C73.4944 18.5177 75.1175 20.3156 77.5514 23.7865M43.3941 17.4944C47.6147 15.0393 50.3977 14.1897 55.9784 13.4494M90.1357 37.2697C91.456 37.472 92.1257 37.9742 93.2817 39.0674" stroke="black" stroke-opacity="0.66" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
-            </svg>
-            { click==false &&
+            </svg>}
+            {play==true && click==false &&
             <div ClassName="arrow">
             <ArrowBackIcon style={{ fontSize:"50px", transform:"rotateZ(45deg)",
-            marginLeft:"210px",
+            marginLeft:"10%",
             position:"relative",
-            top:"-20px"
+            top:"-80px"
             }}
             onClick={()=>
                 {
@@ -216,7 +226,7 @@ const Game = () => {
             />
             <ArrowBackIcon style={{ fontSize:"50px", transform:"rotateZ(90deg)",
             position:"relative",
-            top:"-40px" }}
+            top:"-100px" }}
             onClick={()=>
                 {
                     setUser(1)
@@ -228,7 +238,7 @@ const Game = () => {
             />
             <ArrowBackIcon style={{ fontSize:"50px", transform:"rotateZ(135deg)",
             position:"relative",
-            top:"-20px" }}
+            top:"-80px" }}
             onClick={()=>
                 {
                     setUser(2)
@@ -240,15 +250,28 @@ const Game = () => {
             />
             </div>
             }
-            {click==true &&
+            {play==true && click==true &&
                 <ReplayIcon
-                    style={{fontSize:"50px",marginLeft:"250px"}}
+                    style={{fontSize:"50px",marginLeft:"12%",position:"relative",
+                    top:"-30px"
+
+                }}
                     onClick={()=>(
                         setClick(false)
                     )
                     }
                 />
             }
+
+            { play==false && <div
+                onClick={()=>setplay(true)}
+                style={{marginBottom:68}}
+            >
+                Want to try your Luck?<br/>
+                Click me to ENTER!!
+            </div>}
+            
+            </div>
         </div>
      );
 }

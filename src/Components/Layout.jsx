@@ -6,6 +6,7 @@ import Footer from './Footer';
 import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+import About from './About';
 
 const style=makeStyles({
   join:{
@@ -54,8 +55,8 @@ const Layout = () => {
            {/* LANDING PAGE */}
            {/* ACHIEVEMENTS */}
            <Home/>
-            {/* ABOUT */}
-
+           {/* ABOUT */}
+            <About width={width}/>
            {/* FIXTURES(?) */}
 
            {/* GALLERY */}

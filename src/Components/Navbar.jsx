@@ -3,7 +3,8 @@ import { Grid, makeStyles, List, Button, Typography } from '@material-ui/core'
 import logo from '../media/logo-football.svg'
 const useStyles = makeStyles({
     root:{
-        background:"#002984",
+        background:"#ddd",
+        // opacity:"0.1",
         height:"100vh",
         width:120,
         position:"fixed",
@@ -36,7 +37,7 @@ const useStyles = makeStyles({
         color:"white",
         "&:hover":{
             // background:"rgba(200,200,200,1)",
-            background:"#3f51b5",
+            background:"white",
             transform:"scale(1.2)",
             "& span":{
                 visibility:"visible",
@@ -48,15 +49,13 @@ const useStyles = makeStyles({
     label:{
         position:"relative",
         zIndex:"100",
-        backgroundImage: "linear-gradient(left, rgba(63,81,181,1), rgba(63,81,181,0))",
+        backgroundImage: "linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0))",
         position:"absolute",
         top:"50%",
         transform:"translate(-25px,-50%)",
         zIndex:100,
         padding:10,
         visibility:"hidden",
-        // height:"74.5%",
-        // border:"1px solid black",
         opacity:0,
         transition:"all 1s  ease",
 
@@ -74,7 +73,7 @@ const Navbar = () => {
                 </section>
                 <List className={classes.iconList}>
                     <span className={classes.icons} >
-                        <box-icon color="white" name='face' size="lg"/>
+                        <box-icon name='face' size="lg"/>
                         <span className={classes.label}>
                             <Typography variant="h5">
                                 About    
@@ -82,7 +81,7 @@ const Navbar = () => {
                         </span>
                     </span>
                     <span className={classes.icons}>
-                        <box-icon color="white" name='football' size="lg"/>
+                        <box-icon name='football' size="lg"/>
                         <span className={classes.label}>
                             <Typography variant="h5">
                                 Events    
@@ -90,7 +89,7 @@ const Navbar = () => {
                         </span>
                     </span>
                     <span className={classes.icons}>
-                        <box-icon color="white" name='photo-album' size="lg"/>
+                        <box-icon name='photo-album' size="lg"/>
                         <span className={classes.label}>
                             <Typography variant="h5">
                                 Gallery    
@@ -98,7 +97,7 @@ const Navbar = () => {
                         </span>
                     </span>
                     <span className={classes.icons}>
-                        <box-icon color="white" name='terminal' size="lg"/>
+                        <box-icon name='terminal' size="lg"/>
                         <span className={classes.label}>
                             <Typography variant="h5">
                                 Contributors    
