@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import About from './About';
-
+import MainFooter from './MainFooter';
 const style=makeStyles({
   join:{
     width:"100px",
@@ -67,6 +67,7 @@ const Layout = () => {
            <Footer width={width}/>
            {/* CONTACT */}
 
+           <MainFooter width={width}/>
            {/* <Button
             className={classes.join}
             variant="contained"

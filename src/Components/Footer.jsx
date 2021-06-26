@@ -29,7 +29,7 @@ const style = makeStyles({
   },
   content:{
    marginTop:"20px",
-   marginLeft:"20px"
+   marginLeft:"20px",
  },
   inner_map:{
     width:"100%",
@@ -50,14 +50,16 @@ const Footer = ({width}) =>{
       <Grid item xs ={10} sm={10} md={5} className={classes.content}>
         <List>
           <ListItem>
-            <ListItemText primary="CONTACT"/>
+            <ListItemText style={{fontSize:"25px"}}>
+              CONTACT
+            </ListItemText>
           </ListItem>
           <ListItem>
             <ListItemIcon>
               <MailOutlineIcon/>
             </ListItemIcon>
             <ListItemText>
-              <p style={{margin:"0px",padding:"0px"}}>CLUB MAIL ID
+              <p style={{margin:"0px",padding:"0px",fontSize:"20px"}}>CLUB MAIL-ID
              <a style={{textDecoration:"none",color:"black",marginLeft:"20px"}}href="mailto: footballclub@iiitdmj.ac.in">footballclub@iiitdmj.ac.in</a>
              </p>
             </ListItemText>
