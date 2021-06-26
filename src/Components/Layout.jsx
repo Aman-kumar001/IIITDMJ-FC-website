@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Home  from './Home'
-import Gallery  from './Gallery'
+import Gallery  from './gallery.jsx'
+import Footer from './Footer';
 import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import About from './About';
 import Events from './Events';
+import MainFooter from './MainFooter';
 const style=makeStyles({
   join:{
     width:"100px",
@@ -68,12 +70,13 @@ const Layout = () => {
            {/* GALLERY */}
            <Gallery width={width}/>
 
-           
+           <Footer width={width}/>
            {/* CONTACT */}
-          
-           {/* <Button 
+
+           <MainFooter width={width}/>
+           {/* <Button
             className={classes.join}
-            variant="contained" 
+            variant="contained"
             color="primary"
             >
             JOIN US!!
