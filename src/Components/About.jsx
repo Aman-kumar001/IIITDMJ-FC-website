@@ -17,7 +17,7 @@ const useStyles=makeStyles({
        marginBottom:"50px"
    },
    content:{
-       border:"1px solid black",
+    //    border:"1px solid black",
    },
    paragraph:{
        textAlign:"left",

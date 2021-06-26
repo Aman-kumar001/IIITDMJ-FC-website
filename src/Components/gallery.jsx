@@ -59,7 +59,7 @@ const Gallery = ({width}) => {
                     <div className="img box"><img src={trail2} alt="" height="100%" width="100%"/></div>
                 </div>
                 <div className="slide img">
-                    <img src={trail} alt="" height="100%" width="100%"/>
+                    <img src={trail} alt="" height="100%" width="100%" id="hovered"/>
                 </div>
                 <div className="slide img">
                     <h1>4</h1>

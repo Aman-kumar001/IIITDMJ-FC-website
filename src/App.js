@@ -1,4 +1,5 @@
 import './App.css';
+import './Events.css';
 import { useState, useEffect } from 'react';
 import Loading from './Components/Loading'
 import Layout from './Components/Layout'

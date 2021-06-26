@@ -87,12 +87,12 @@ code {
   80%{
     top:-60%;
     left: -22%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
   100%{
     top:-40%;
     left: -22%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
 }
 @keyframes center{
@@ -104,12 +104,12 @@ code {
   80%{
     top:-65%;
     left: 5%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
   100%{
     top:-40%;
     left: 5%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
 }
 @keyframes right{
@@ -121,12 +121,12 @@ code {
   80%{
     top:-65%;
     left: 33%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
   100%{
     top:-40%;
     left: 33%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
 }
 .saveLeft{
@@ -159,12 +159,12 @@ code {
   80%{
     top:-52%;
     left: -25%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
   100%{
     top:-52%;
     left: -60%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
 }
 @keyframes saveCenter{
@@ -176,7 +176,7 @@ code {
   80%{
     top:-70%;
     left: -2%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
   100%{
     top:-100%;
@@ -192,13 +192,13 @@ code {
   }
   80%{
     top:-52%;
-    left: 35%;
-    transform: scale(0.8); 
+    left: 33%;
+    transform: scale(0.7); 
   }
   100%{
     top:-52%;
     left: 60%;
-    transform: scale(0.8); 
+    transform: scale(0.7); 
   }
 }
 #moveLeft{
