@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Home  from './Home'
-import Gallery  from './gallery.jsx'
+import Gallery  from './Gallery.jsx'
 import Footer from './Footer';
 import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
