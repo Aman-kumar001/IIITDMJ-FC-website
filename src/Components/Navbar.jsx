@@ -8,12 +8,12 @@ const useStyles = makeStyles({
         height:"100vh",
         width:120,
         position:"fixed",
-        zIndex:"100"
+        zIndex:"100",
     },
     img:{
         width:"100px",
         margin: "20px 10px",
-        marginBottom:"20px"
+        marginBottom:"40%"
     },
     iconList:{
         display:"flex",
@@ -34,7 +34,7 @@ const useStyles = makeStyles({
         transition:"all 0.4s ease",
         width:"85%",
         zIndex:"100",
-        color:"white",
+        color:"black",
         "&:hover":{
             // background:"rgba(200,200,200,1)",
             background:"white",
@@ -59,56 +59,78 @@ const useStyles = makeStyles({
         opacity:0,
         transition:"all 1s  ease",
 
+    },
+    join:{
+        marginTop:"20%",
+    },
+    links:{
+        color:"black"
     }
 })
 
 
 const Navbar = () => {
     const classes = useStyles()
+
+    const navs = [
+        {
+            id:1,
+            icon:"face",
+            label:"About",
+            link:"about"
+        },
+        {
+            id:2,
+            icon:"football",
+            label:"Events",
+            link:"events"
+        },
+        {
+            id:3,
+            icon:"photo-album",
+            label:"Gallery",
+            link:"gallery"
+        },
+        {
+            id:4,
+            icon:"terminal",
+            label:"WebTeam",
+            link:"contributors"
+        }
+    ]
     return (
         <div>
             <Grid className={classes.root}>
                 <section className={classes.imgSection}>
-                    <img className={classes.img} src={logo}/>
+                    <a href="#home">
+                        <img className={classes.img} src={logo}/>
+                    </a>
                 </section>
                 <List className={classes.iconList}>
-                    <span className={classes.icons} >
-                        <box-icon name='face' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                About    
-                            </Typography>
-                        </span>
-                    </span>
-                    <span className={classes.icons}>
-                        <box-icon name='football' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                Events    
-                            </Typography>
-                        </span>
-                    </span>
-                    <span className={classes.icons}>
-                        <box-icon name='photo-album' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                Gallery    
-                            </Typography>
-                        </span>
-                    </span>
-                    <span className={classes.icons}>
-                        <box-icon name='terminal' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                Contributors    
-                            </Typography>
-                        </span>
-                    </span>
+
+                    {
+                        navs.map(nav => {
+                            return(
+                                <span className={classes.icons} >
+                                    <a href={`#${nav.link}`} className={classes.links}>
+                                        <box-icon name={nav.icon} size="lg"/>
+                                        <span className={classes.label}>
+                                            <Typography variant="h5">
+                                                {nav.label}    
+                                            </Typography>
+                                        </span>
+                                    </a>
+                                </span>
+                            )
+                        })
+                    }
                 </List>
 
                 <section className={classes.join}>
                     <Button variant="outlinedd" color="Primary">
-                        Join Us
+                        <Typography color="secondary" variant="h6">
+                            Join Us
+                        </Typography>
                     </Button>
                 </section>
             </Grid>

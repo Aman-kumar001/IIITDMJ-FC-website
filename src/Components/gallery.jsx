@@ -28,7 +28,7 @@ const Gallery = ({width}) => {
         className: 'slider',
         initialSlide: 5,
         overScan: 3,
-        slidesToShow: 5,
+        slidesToShow: 4,
         wheel: true,
     };
     const settings2 =  {
@@ -36,7 +36,7 @@ const Gallery = ({width}) => {
         className: 'slider',
         initialSlide: 1,
         overScan: 3,
-        slidesToShow: 4,
+        slidesToShow: 3,
         wheel: true,
     };
     const settings3 =  {
@@ -44,7 +44,7 @@ const Gallery = ({width}) => {
         className: 'slider',
         initialSlide: 1,
         overScan: 3,
-        slidesToShow: 5,
+        slidesToShow: 4,
         wheel: true,
     };
     return ( 

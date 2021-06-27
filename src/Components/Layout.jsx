@@ -57,9 +57,13 @@ const Layout = () => {
             
 
            {/* ACHIEVEMENTS */}
-           <Home/>
+           <a name="home" clasName={classes.anchor}>
+          <Home/>
+          </a>
            {/* ABOUT */}
-           <About width={width}/>
+           <a name="about" className={classes.anchor}>
+             <About width={width}/>
+           </a>
            
            {/* FIXTURES(?) */}
 
@@ -68,7 +72,9 @@ const Layout = () => {
             <Events width={width}/>
             
            {/* GALLERY */}
-           <Gallery width={width}/>
+           <a name="gallery" className={classes.anchor}>
+            <Gallery width={width}/>
+           </a>
 
            <Footer width={width}/>
            {/* CONTACT */}
