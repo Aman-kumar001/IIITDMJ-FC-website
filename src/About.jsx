@@ -31,15 +31,15 @@ const useStyles=makeStyles({
 })
 const About = ({width}) => {
     const classes=useStyles();
-    return (
-        <div
-            className={classes.about}
+    return ( 
+        <div 
+            className={classes.about} 
             style={{width:`${width-137.5}px`}}
         >
             <h1 className={classes.heading}>About</h1>
             <Grid container xs={12} className={classes.content}>
                 <Grid item xs={1}>
-                </Grid>
+                </Grid> 
                 <Grid item xs={4}>
                     <Typography class={classes.paragraph}>
                     We place equal emphasis on both the Men's and Women's teams with equal opportunity to take part in various intra-college events such as Enthuse and Futsal. Regular sessions are also held on evenings and mornings where an organized training plan is followed.
@@ -49,7 +49,7 @@ const About = ({width}) => {
                 <div className={classes.game}>
                     <Game/>
                 </div>
-
+                
                 </Grid>
                 <Grid item xs={1}>
                 </Grid>
@@ -57,5 +57,5 @@ const About = ({width}) => {
         </div>
      );
 }
-
+ 
 export default About;
