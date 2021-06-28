@@ -30,16 +30,9 @@ const useStyles=makeStyles({
 })
 const About = () => {
     const classes=useStyles();
-<<<<<<< HEAD
     return ( 
         <div 
             className={classes.about}
-=======
-    return (
-        <div
-            className={classes.about}
-            style={{width:`${width-137.5}px`}}
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
         >
             <h1 className={classes.heading}>About</h1>
             <Grid container xs={12} className={classes.content}>

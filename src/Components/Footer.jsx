@@ -39,29 +39,18 @@ img:{
 },
 upper:{
   width:"100%",
-<<<<<<< HEAD
   backgroundColor:"white",
   marginTop:"0px",
   overflow:"hidden",
   paddingBottom:"25px",
   fontFamily:"Avenir Light"
-=======
-  marginLeft:"120.1px",
-  backgroundColor:"white",
-  marginTop:"0px",
-  overflow:"hidden",
-  paddingBottom:"25px"
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
 },
 content:{
  marginTop:"20px",
  marginLeft:"20px",
  marginRight:"0px",
  position:"relative",
-<<<<<<< HEAD
  fontFamily:"Avenir Light",
-=======
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
  //border:"1px solid black"
 },
 inner_map:{
@@ -73,22 +62,14 @@ inner_map:{
    fontWeight:"normal",
    fontSize:"23px",
    position:"relative",
-<<<<<<< HEAD
    marginTop:"0px",
    fontFamily:"Avenir Light",
-=======
-   marginTop:"0px"
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
  },
  span:{
    position:"absolute",
    marginTop:"20px",
-<<<<<<< HEAD
    fontStyle:"italic",
    fontFamily:"Avenir Light",
-=======
-   fontStyle:"italic"
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
  }
 })
 const Footer = () =>{
@@ -96,11 +77,7 @@ const Footer = () =>{
 const classes = style();
 return(
 <div className={classes.root}>
-<<<<<<< HEAD
   <Grid container className={classes.upper}>
-=======
-  <Grid container style={{width:`${width-137.5}px`}} className={classes.upper}>
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
     <Grid className={classes.map} item xs={12} sm={12} md={4}>
        <iframe className={classes.inner_map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58684.46012761239!2d80.02483691036957!3d23.17827358304068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981a945b8f1905b%3A0x3b23459cd08a40e7!2sIIITDM%20Football%20and%20Cricket%20Ground!5e0!3m2!1sen!2sin!4v1624585139523!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy"></iframe>
     </Grid>
