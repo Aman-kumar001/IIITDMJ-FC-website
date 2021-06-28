@@ -29,7 +29,7 @@ img:{
     //right:"-45px",
     //bottom:"-5px",
     right:"0px",
-    bottom:"-20px",
+    bottom:"-0px",
     ['@media (min-width:960px)']: { // eslint-disable-line no-useless-computed-key
      right:"-50px",
    },
@@ -54,9 +54,10 @@ content:{
  //border:"1px solid black"
 },
 inner_map:{
-  borderRadius:"25px",
+  borderRadius:"20px",
   width:"100%",
-  height:"380px"
+  height:"330px",
+  marginTop:"30px"
 },
  heading:{
    fontWeight:"normal",
@@ -114,9 +115,9 @@ return(
         </ListItem>
         <ListItem>
            <ListItemIcon>
-             <FacebookIcon fontSize="large"/>
-             <InstagramIcon fontSize="large"/>
-             <WhatsAppIcon fontSize="large"/>
+             <FacebookIcon fontSize="large" style={{marginTop:"15px"}}/>
+             <InstagramIcon fontSize="large" style={{marginTop:"15px"}}/>
+             <WhatsAppIcon fontSize="large" style={{marginTop:"15px"}}/>
              <img className={classes.img} src={logo}/>
            </ListItemIcon>
         </ListItem>
