@@ -38,4 +38,9 @@ body{
     background-repeat: no-repeat;
     background-color: aquamarine;
 }
-
+#Layer_1{
+    transform: scale(0.9);
+    position: relative;
+    top:0;
+    left:0;
+}

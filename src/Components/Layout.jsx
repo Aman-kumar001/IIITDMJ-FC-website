@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import About from './About';
 import Events from './Events';
+import Achieve from './Achieve';
 import MainFooter from './MainFooter';
 const style=makeStyles({
   join:{
@@ -54,12 +55,13 @@ const Layout = () => {
            <Navbar/>
 
            {/* LANDING PAGE */}
-            
 
-           {/* ACHIEVEMENTS */}
            <a name="home" clasName={classes.anchor}>
           <Home/>
-          </a>
+           </a>
+           {/* ACHIEVEMENTS */}
+            <Achieve width={width}/>
+
            {/* ABOUT */}
            <a name="about" className={classes.anchor}>
              <About width={width}/>

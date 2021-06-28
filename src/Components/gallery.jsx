@@ -7,7 +7,6 @@ const style=makeStyles({
         width:"100%",
         marginLeft:"120.1px",
         backgroundColor:"green",
-        marginTop:"0",
         overflow:"hidden",
     },
     heading:{
