@@ -3,6 +3,7 @@ import Game from "./Game";
 const useStyles=makeStyles({
    about:{
         // height:"100vh",
+        marginLeft:"120px",
         backgroundColor:"white",
         paddingBottom:"100px",
         overflow:"hidden",
@@ -28,23 +29,17 @@ const useStyles=makeStyles({
         overflow:"hidden",
    }
 })
-const About = () => {
+const About = ({width}) => {
     const classes=useStyles();
-<<<<<<< HEAD
     return ( 
         <div 
-            className={classes.about}
-=======
-    return (
-        <div
-            className={classes.about}
+            className={classes.about} 
             style={{width:`${width-137.5}px`}}
->>>>>>> 6783a342c421eec51511f6d26c24d328ea340eab
         >
             <h1 className={classes.heading}>About</h1>
             <Grid container xs={12} className={classes.content}>
                 <Grid item xs={1}>
-                </Grid>
+                </Grid> 
                 <Grid item xs={4}>
                     <Typography class={classes.paragraph}>
                     We place equal emphasis on both the Men's and Women's teams with equal opportunity to take part in various intra-college events such as Enthuse and Futsal. Regular sessions are also held on evenings and mornings where an organized training plan is followed.
@@ -54,7 +49,7 @@ const About = () => {
                 <div className={classes.game}>
                     <Game/>
                 </div>
-
+                
                 </Grid>
                 <Grid item xs={1}>
                 </Grid>
@@ -62,5 +57,5 @@ const About = () => {
         </div>
      );
 }
-
+ 
 export default About;
