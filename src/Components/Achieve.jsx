@@ -5,7 +5,6 @@ import trophy from "../media/trophy-svgrepo-com.svg"
 
 const styles=makeStyles({
     achieve:{
-        marginLeft:"120px",
         backgroundColor:"white",
         marginTop:"0px",
     },
@@ -19,12 +18,8 @@ const styles=makeStyles({
         margin:"auto",
         // border:"1px solid black",
     },
-    panel:{
-        height:200,
-        border:"1px solid black",
-        width:"100%",
-    },
     disc:{
+        position:"relative",
         textAlign:"center",
     },
     men:{
@@ -35,41 +30,44 @@ const styles=makeStyles({
         display:"flex",
     }
 })
-const Achieve = ({width}) => {
+const Achieve = () => {
     const classes=styles();
     return ( 
-        <div className={classes.achieve} style={{width:`${width-137.5}px`}} >
+        <div className={classes.achieve}>
             <h1 className={classes.header}>Glorious Moments</h1>
-            <Grid container xs={12} className={classes.grid}>
-                <Grid item xs={4}>
-                    <div className={classes.panel}>
+            <Grid container xs={12} spacing={2} className={classes.grid}>
+                <Grid item sm={12} md={4}>
+                    <div className="panel">
+                        <div className="hover"></div>
                         <div className={classes.svg}>
                            <img src={trophy} alt=""
                             height="100px"
-                            style ={{margin:"auto"}} />
+                            style ={{position:"relative",margin:"auto",zIndex:"2",}} />
                            <img src={trophy} alt=""
                             height="100px"
-                            style ={{margin:"auto"}} />
+                            style ={{position:"relative",margin:"auto",zIndex:"2",}} />
                         </div>
-                        <p></p>
+                        <p className={classes.disc}>Inter IIIT Winners (Mens) x2 </p>
                     </div>
                 </Grid>
-                <Grid item xs={4}>
-                    <div className={classes.panel}>
+                <Grid item sm={12} md={4}>
+                    <div className="panel">
+                    <div className="hover"></div>
                         <div className={classes.svg}>
                         <img src={trophy} alt=""
                         height="100px"
-                        style ={{margin:"auto"}}  />
+                        style ={{position:"relative",margin:"auto",zIndex:"2",}}  />
                         </div>
-                        <p className={classes.disc}></p>
+                        <p className={classes.disc}>Enthuse Champions</p>
                     </div>
                 </Grid>
-                <Grid item xs={4}>
-                <div className={classes.panel}>
+                <Grid item sm={12} md={4}>
+                <div className="panel">
+                <div className="hover"></div>
                         <div className={classes.svg}>
                         <img src={trophy}  alt=""
                         height="100px"
-                        style ={{margin:"auto"}}/>
+                        style ={{position:"relative",margin:"auto",zIndex:"2",}}/>
                         </div>
                         <p className={classes.disc}>Inter IIIT Winners (womens)</p>
                     </div>

@@ -9,7 +9,6 @@ import grainy from '../media/grainy.png'
 const useStyles=makeStyles({
     root:{
         height:"95vh",
-        marginLeft:"120px",
         backgroundImage:`url(${home})`,
         backgroundSize:"cover",
         dsipaly:"flex",
@@ -18,16 +17,19 @@ const useStyles=makeStyles({
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        overflow:"hidden"
+        overflow:"hidden",
+        fontFamily:"Avenir Light",
     },
     headerSection:{
         position:"relative",
         top:"50%",
         transform:"translateY(-100%)",
         color:"white",
+        fontFamily:"Avenir Light",
     },
     header:{
-        fontSize:"8em"
+        fontSize:"8em",
+        fontFamily:"Avenir Light",
     },
     grain:{
         backgroundImage:`url(${grainy})`,
@@ -60,7 +62,7 @@ const Home = () => {
     return (
         <Grid className={classes.root}>
             
-            <div className={classes.grain}/>
+            <div/>
             <Grid className={classes.headerSection}>
                 <Controller>
                     <Scene

@@ -1,26 +1,23 @@
 import Slider from 'infinite-react-carousel';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles,Typography } from '@material-ui/core';
 import trail from "../media/trial.JPG"
 import trail2 from "../media/trial2.jpg"
 const style=makeStyles({
     gallery:{
         width:"100%",
-        marginLeft:"120.1px",
-        backgroundColor:"green",
+        backgroundColor:"white",
         overflow:"hidden",
+        fontFamily:"Avenir Light",
     },
     heading:{
         textAlign:"center",
-        fontSize:"50px",
-        marginTop:"0px",
-        paddingTop:"20px",
-        fontWeight:"lighter"
+        fontFamily:"Avenir Light",
     },
 })
 
 
 
-const Gallery = ({width}) => {
+const Gallery = () => {
     const classes=style();
     const settings =  {
         arrows: false,
@@ -47,8 +44,8 @@ const Gallery = ({width}) => {
         wheel: true,
     };
     return ( 
-        <div className={classes.gallery} style={{width:`${width-137.5}px`}}>
-            <div><h1 className={classes.heading}>GALLERY</h1></div>
+        <div className={classes.gallery}>
+            <div><Typography className={classes.heading} variant="h3">GALLERY</Typography></div>
             <Slider {...settings}>
                 <div className="slide img">
                     <h1>1</h1>

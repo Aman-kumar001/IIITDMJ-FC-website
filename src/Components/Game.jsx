@@ -1,7 +1,8 @@
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { useState } from "react";
 import ReplayIcon from '@material-ui/icons/Replay';
-import { makeStyles } from '@material-ui/core';
+import ReactiveButton from 'reactive-button';
+import { makeStyles} from '@material-ui/core';
 const styles=makeStyles({
     container:{
         margin:"auto",
@@ -265,10 +266,14 @@ const Game = () => {
 
             { play==false && <div
                 onClick={()=>setplay(true)}
-                style={{marginBottom:68}}
+                style={{marginBottom:68,marginLeft:60}}
             >
-                Want to try your Luck?<br/>
-                Click me to ENTER!!
+                <ReactiveButton
+                    onClick={()=>setplay(true)}
+                    type="secondary"
+                    idleText="Wanna try Luck?"
+                    shadow="true"
+                />
             </div>}
             
             </div>

@@ -17,12 +17,12 @@ const style=makeStyles({
     front:{
         height:"100%",
         width:"100%",
-        backgroundImage:`url(http://www.mandysam.com/img/random.jpg)`,
-        backgroundSize:"cover",
         transformOrigin:"center",
-        borderRadius:"50%",
         transformStyle:"preserve-3d",
-        animation:`$spin 3s ease infinite`
+        animation:`$spin 3s ease infinite`,
+        border:"2px solid ",
+        borderRadius:"50%"
+        
     },
     back:{
         height:"100%",
@@ -30,6 +30,7 @@ const style=makeStyles({
         backgroundSize:"cover",
         transformOrigin:"center",
         position:"absolute",
+        left:"-5px",
         top:"0",
         backfaceVisibility: "hidden",
         animation:`$spin 3s ease infinite`
@@ -37,6 +38,12 @@ const style=makeStyles({
     "@keyframes spin":{
         "0%":{transform: "rotateY(0deg)"},
         "100%":{transform: "rotateY(360deg)"}
+    },
+    collegeLogo:{
+        position:"relative",
+        top:"-70%",
+        width:"100%",
+        transform:"rotateY(180deg)",
     }
     
 })
@@ -45,7 +52,30 @@ const Loading = () => {
     return ( 
         <div className={classes.cover}>
             <div className={classes.frame}>
-                <div className={classes.front}></div>
+                {/* COLLEGE LOGO */}
+                <div className={classes.front}> 
+                    <svg className={classes.collegeLogo} width="494" height="472" viewBox="0 0 494 472" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="college-logo">
+                            <ellipse id="Ellipse 10" cx="247" cy="236" rx="247" ry="236" fill="white"/>
+                            <rect id="Rectangle 1" x="84.5" y="72.5" width="325" height="312" rx="49.5" fill="white" stroke="#047E05" stroke-width="5"/>
+                            <path id="Rectangle 2" d="M136 98.5H358C370.979 98.5 381.5 109.021 381.5 122V335C381.5 347.979 370.979 358.5 358 358.5H136C123.021 358.5 112.5 347.979 112.5 335V122C112.5 109.021 123.021 98.5 136 98.5Z" fill="white" stroke="#047E05" stroke-width="25"/>
+                            <path id="Vector 30" d="M261.5 86H232C236.518 87.0903 239.89 87.9127 243 91.5H248C252.599 87.5703 255.925 87.0896 261.5 86Z" fill="#06057E"/>
+                            <path id="Vector 31" fill-rule="evenodd" clip-rule="evenodd" d="M223 110.01C223.623 109.997 224.209 109.996 224.762 110.01H223ZM261.8 126.01L262 117.01C263.404 112.208 265.419 110.841 270.5 110.01H224.762C229.855 110.134 232.078 111.511 233 117.01V126.01H261.8Z" fill="#047E05"/>
+                            <rect id="Rectangle 3" x="233" y="126" width="29" height="14" fill="#06057E"/>
+                            <path id="Vector 32" d="M190 86V65H304V86H190Z" fill="#06057E"/>
+                            <path id="Vector 34" d="M231 337.5C229.52 341.998 227.578 345.196 223 346V371H252V332H231.364C231.445 334.146 231.244 335.351 231 337.5Z" fill="#047E05"/>
+                            <path id="Vector 35" d="M130 402V377.5H232V368.5C236.231 366.125 238.707 365.621 243.5 365C247.358 365.795 249.338 366.159 252.5 368.5V402H130Z" fill="#06057E"/>
+                            <rect id="Rectangle 4" x="252" y="329" width="77" height="78" fill="white"/>
+                            <path id="Vector 37" d="M297 186.5C223.892 241.965 175.151 272.978 209.107 305.99C243.524 327.539 263.436 286.453 297 186.5Z" fill="#56D2F0"/>
+                            <path id="Vector 38" d="M283.067 174.873C195.681 202.888 139.404 215.94 160.458 258.361C185.758 290.123 218.193 257.99 283.067 174.873Z" fill="#37A8E9"/>
+                            <path id="Vector 36" d="M288.5 180.5C199.062 227.759 141.243 254.728 173.5 294.5C208.077 322.304 235.674 280.424 288.5 180.5Z" fill="#0C4AFD"/>
+                            <circle id="Ellipse 9" cx="311.5" cy="156.5" r="22.5" fill="#047E05"/>
+                        </g>
+                    </svg>
+
+                </div>
+
+                {/* CLUB LOGO */}
                 <div className={classes.back}>
                 <svg width="213" height="229" viewBox="0 0 213 229" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="logo">

@@ -9,7 +9,6 @@ import Button from '@material-ui/core/Button';
 import About from './About';
 import Events from './Events';
 import Achieve from './Achieve';
-import MainFooter from './MainFooter';
 const style=makeStyles({
   join:{
     width:"100px",
@@ -60,28 +59,27 @@ const Layout = () => {
           <Home/>
            </a>
            {/* ACHIEVEMENTS */}
-            <Achieve width={width}/>
+            <Achieve/>
 
            {/* ABOUT */}
            <a name="about" className={classes.anchor}>
-             <About width={width}/>
+             <About/>
            </a>
            
            {/* FIXTURES(?) */}
 
 
            {/* EVENTS */}
-            <Events width={width}/>
+            <Events/>
             
            {/* GALLERY */}
            <a name="gallery" className={classes.anchor}>
-            <Gallery width={width}/>
+            <Gallery/>
            </a>
 
-           <Footer width={width}/>
+           <Footer/>
            {/* CONTACT */}
 
-           <MainFooter width={width}/>
            {/* <Button
             className={classes.join}
             variant="contained"

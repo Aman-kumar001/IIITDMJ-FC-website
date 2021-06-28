@@ -3,7 +3,6 @@ import Game from "./Game";
 const useStyles=makeStyles({
    about:{
         // height:"100vh",
-        marginLeft:"120px",
         backgroundColor:"white",
         paddingBottom:"100px",
         overflow:"hidden",
@@ -29,12 +28,11 @@ const useStyles=makeStyles({
         overflow:"hidden",
    }
 })
-const About = ({width}) => {
+const About = () => {
     const classes=useStyles();
     return ( 
         <div 
-            className={classes.about} 
-            style={{width:`${width-137.5}px`}}
+            className={classes.about}
         >
             <h1 className={classes.heading}>About</h1>
             <Grid container xs={12} className={classes.content}>
