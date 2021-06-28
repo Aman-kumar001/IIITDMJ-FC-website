@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/IIITDMJ-FC-website/static/css/main.ef385c3e.chunk.css",
-    "main.js": "/IIITDMJ-FC-website/static/js/main.79a8dd72.chunk.js",
-    "main.js.map": "/IIITDMJ-FC-website/static/js/main.79a8dd72.chunk.js.map",
+    "main.css": "/IIITDMJ-FC-website/static/css/main.8603eee7.chunk.css",
+    "main.js": "/IIITDMJ-FC-website/static/js/main.2399b830.chunk.js",
+    "main.js.map": "/IIITDMJ-FC-website/static/js/main.2399b830.chunk.js.map",
     "runtime-main.js": "/IIITDMJ-FC-website/static/js/runtime-main.37db9227.js",
     "runtime-main.js.map": "/IIITDMJ-FC-website/static/js/runtime-main.37db9227.js.map",
     "static/css/2.29aa199f.chunk.css": "/IIITDMJ-FC-website/static/css/2.29aa199f.chunk.css",
-    "static/js/2.464d02e8.chunk.js": "/IIITDMJ-FC-website/static/js/2.464d02e8.chunk.js",
-    "static/js/2.464d02e8.chunk.js.map": "/IIITDMJ-FC-website/static/js/2.464d02e8.chunk.js.map",
+    "static/js/2.f1f7af24.chunk.js": "/IIITDMJ-FC-website/static/js/2.f1f7af24.chunk.js",
+    "static/js/2.f1f7af24.chunk.js.map": "/IIITDMJ-FC-website/static/js/2.f1f7af24.chunk.js.map",
     "static/js/3.f73b15ce.chunk.js": "/IIITDMJ-FC-website/static/js/3.f73b15ce.chunk.js",
     "static/js/3.f73b15ce.chunk.js.map": "/IIITDMJ-FC-website/static/js/3.f73b15ce.chunk.js.map",
     "index.html": "/IIITDMJ-FC-website/index.html",
     "static/css/2.29aa199f.chunk.css.map": "/IIITDMJ-FC-website/static/css/2.29aa199f.chunk.css.map",
-    "static/css/main.ef385c3e.chunk.css.map": "/IIITDMJ-FC-website/static/css/main.ef385c3e.chunk.css.map",
-    "static/js/2.464d02e8.chunk.js.LICENSE.txt": "/IIITDMJ-FC-website/static/js/2.464d02e8.chunk.js.LICENSE.txt",
+    "static/css/main.8603eee7.chunk.css.map": "/IIITDMJ-FC-website/static/css/main.8603eee7.chunk.css.map",
+    "static/js/2.f1f7af24.chunk.js.LICENSE.txt": "/IIITDMJ-FC-website/static/js/2.f1f7af24.chunk.js.LICENSE.txt",
     "static/media/grainy.6dbc2372.png": "/IIITDMJ-FC-website/static/media/grainy.6dbc2372.png",
     "static/media/home.822f786e.JPG": "/IIITDMJ-FC-website/static/media/home.822f786e.JPG",
     "static/media/logo-football.0caf2372.svg": "/IIITDMJ-FC-website/static/media/logo-football.0caf2372.svg",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.37db9227.js",
     "static/css/2.29aa199f.chunk.css",
-    "static/js/2.464d02e8.chunk.js",
-    "static/css/main.ef385c3e.chunk.css",
-    "static/js/main.79a8dd72.chunk.js"
+    "static/js/2.f1f7af24.chunk.js",
+    "static/css/main.8603eee7.chunk.css",
+    "static/js/main.2399b830.chunk.js"
   ]
 }
