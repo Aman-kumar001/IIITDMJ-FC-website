@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Home  from './Home'
-import Gallery  from './Gallery'
+import Gallery  from './gallery'
 import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
@@ -65,7 +65,7 @@ const Layout = () => {
            <a name="about" className={classes.anchor}>
              <About/>
            </a>
-           
+
            {/* FIXTURES(?) */}
 
             {/* GALLERY */}
@@ -77,9 +77,9 @@ const Layout = () => {
            <a name="events" className={classes.anchor}>
            <Events/>
            </a>
-            
-            
-           
+
+
+
 
            <Footer/>
            {/* CONTACT */}
