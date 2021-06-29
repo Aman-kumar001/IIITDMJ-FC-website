@@ -39,7 +39,6 @@ img:{
 },
 upper:{
   width:"100%",
-  marginLeft:"120.1px",
   backgroundColor:"white",
   marginTop:"0px",
   overflow:"hidden",
@@ -69,12 +68,12 @@ inner_map:{
    fontStyle:"italic"
  }
 })
-const Footer = ({width}) =>{
+const Footer = () =>{
 
 const classes = style();
 return(
 <div className={classes.root}>
-  <Grid container style={{width:`${width-137.5}px`}} className={classes.upper}>
+  <Grid container className={classes.upper}>
     <Grid className={classes.map} item xs={12} sm={12} md={4}>
        <iframe className={classes.inner_map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58684.46012761239!2d80.02483691036957!3d23.17827358304068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981a945b8f1905b%3A0x3b23459cd08a40e7!2sIIITDM%20Football%20and%20Cricket%20Ground!5e0!3m2!1sen!2sin!4v1624585139523!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy"></iframe>
     </Grid>
