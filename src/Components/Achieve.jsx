@@ -21,6 +21,7 @@ const styles=makeStyles({
     disc:{
         position:"relative",
         textAlign:"center",
+        fontSize:20,
     },
     men:{
         position:"relative",
@@ -35,7 +36,9 @@ const Achieve = () => {
     return ( 
         <div className={classes.achieve}>
             <h1 className={classes.header}>Glorious Moments</h1>
-            <Grid container xs={12} spacing={2} className={classes.grid}>
+            <Grid container xs={12} spacing={3} className={classes.grid}>
+                <Grid item md={2} sm={0}>
+                </Grid>
                 <Grid item sm={12} md={4}>
                     <div className="panel">
                         <div className="hover"></div>
@@ -47,18 +50,7 @@ const Achieve = () => {
                             height="100px"
                             style ={{position:"relative",margin:"auto",zIndex:"2",}} />
                         </div>
-                        <p className={classes.disc}>Inter IIIT Winners (Mens) x2 </p>
-                    </div>
-                </Grid>
-                <Grid item sm={12} md={4}>
-                    <div className="panel">
-                    <div className="hover"></div>
-                        <div className={classes.svg}>
-                        <img src={trophy} alt=""
-                        height="100px"
-                        style ={{position:"relative",margin:"auto",zIndex:"2",}}  />
-                        </div>
-                        <p className={classes.disc}>Enthuse Champions</p>
+                        <p className={classes.disc}>2x Inter IIIT Winners (Mens) </p>
                     </div>
                 </Grid>
                 <Grid item sm={12} md={4}>
@@ -69,8 +61,11 @@ const Achieve = () => {
                         height="100px"
                         style ={{position:"relative",margin:"auto",zIndex:"2",}}/>
                         </div>
-                        <p className={classes.disc}>Inter IIIT Winners (womens)</p>
+                        <p className={classes.disc}>1x Inter IIIT Winners (womens)</p>
                     </div>
+                </Grid>
+                <Grid item md={2} sm={0}>
+                    
                 </Grid>
             </Grid>
         </div>

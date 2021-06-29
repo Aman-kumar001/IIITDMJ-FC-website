@@ -16,9 +16,17 @@ body{
     margin: 0 30px;
     /* border:1px solid black; */
 }
+.slide1{
+    height:200px;
+    z-index: 0 !important;
+    position: relative;
+    margin: 0 30px;
+    /* border:1px solid black; */
+}
 .slider{
     position: relative;
-    margin: 0px 10%;
+    margin: -5px 10%;
+    margin-bottom: 0;
 }
 .slider div{
     margin-right: 2px;

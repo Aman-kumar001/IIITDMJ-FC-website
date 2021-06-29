@@ -68,14 +68,18 @@ const Layout = () => {
            
            {/* FIXTURES(?) */}
 
-
-           {/* EVENTS */}
-            <Events/>
-            
-           {/* GALLERY */}
+            {/* GALLERY */}
            <a name="gallery" className={classes.anchor}>
             <Gallery/>
            </a>
+
+           {/* EVENTS */}
+           <a name="events" className={classes.anchor}>
+           <Events/>
+           </a>
+            
+            
+           
 
            <Footer/>
            {/* CONTACT */}

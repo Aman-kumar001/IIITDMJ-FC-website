@@ -2,8 +2,8 @@ import React from 'react'
 import { Typography, Grid, makeStyles } from '@material-ui/core'
 import { Tween } from 'react-gsap';
 import { Controller, Scene } from 'react-scrollmagic';
-import home from "../media/home.JPG"
-import grainy from '../media/grainy.png'
+import home from "../media/home.jpg"
+
 
 
 const useStyles=makeStyles({
@@ -30,16 +30,6 @@ const useStyles=makeStyles({
     header:{
         fontSize:"8em",
         fontFamily:"Avenir Light",
-    },
-    grain:{
-        backgroundImage:`url(${grainy})`,
-        height:"300%",
-        left: "-50%",
-        opacity: 0.25,
-        position: "fixed",
-        top: "-100%",
-        width: "300%",
-        animation: "$grain 8s steps(10) infinite"
     },
     "@keyframes grain" : {
         "0%" : { transform:"translate(0, 0)" },

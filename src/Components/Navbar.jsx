@@ -103,13 +103,13 @@ const Navbar = () => {
     },
     {
       id:2,
-      label:"Events",
-      link:"#events"
+      label:"Gallery",
+      link:"#gallery" 
     },
     {
       id:3,
-      label:"Gallery",
-      link:"#gallery"
+      label:"Events",
+      link:"#events"
     },
   ]
   const [open, setOpen] = useState(false);
