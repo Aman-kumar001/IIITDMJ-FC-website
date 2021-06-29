@@ -25,6 +25,13 @@ import pic19 from "../media/pic19.jpg"
 import pic21 from "../media/pic21.JPG"
 import pic22 from "../media/pic22.jpeg"
 import pic23 from "../media/pic23.jpeg"
+import lineup from "../media/lineup.jpg"
+import pic24 from "../media/pic24.JPG"
+import pic25 from "../media/pic25.JPG"
+import pic26 from "../media/pic26.JPG"
+import pic27 from "../media/pic27.jpg"
+import pic28 from "../media/pic28.jpg"
+import pic29 from "../media/pic29.jpg"
 const style=makeStyles({
     gallery:{
         width:"100%",
@@ -76,7 +83,7 @@ const Gallery = () => {
                 </div>
                 <div className="slide multi">
                     <div className="img box"><img src={trail2} alt="" height="100%" width="100%"/></div>
-                    <div className="img box"><img src="" alt="" height="100%" width="100%"/></div>
+                    <div className="img box"><img src={lineup} alt="" height="100%" width="100%"/></div>
                 </div>
                 <div className="slide img">
                     <img src={trail} alt="" height="100%" width="100%" id="hovered"/>
@@ -97,8 +104,8 @@ const Gallery = () => {
                     <img src={pic4} alt="" height="100%" width="100%" id="hovered"/>
                 </div>
                 <div className="slide multi">
-                    <div className="img box"></div>
-                    <div className="img box"></div>
+                    <div className="img box"><img src={pic26} alt="" height="150%" width="100%" id="hovered" style={{position:"relative",top:"-20px"}}/></div>
+                    <div className="img box"><img src={pic27} alt="" height="150%" width="100%" id="hovered" style={{position:"relative",top:"-18px"}}/></div>
                 </div>
                 <div className="slide img">
                     <img src={pic7} alt="" height="100%" width="100%" id="hovered"/>
@@ -157,14 +164,14 @@ const Gallery = () => {
                 <img src={pic} alt="" height="100%" width="100%" id="hovered"/>
                 </div>
                 <div className="slide img">
-                <img src={pic15} alt="" height="100%" width="100%" id="hovered"/>
+                <img src={pic24} alt="" height="100%" width="100%" id="hovered"/>
                 </div>
                 <div className="slide img">
-                <img src={pic15} alt="" height="100%" width="100%" id="hovered"/>
+                <img src={pic25} alt="" height="100%" width="100%" id="hovered"/>
                 </div>
                 <div className="slide multi">
-                    <div className="img box"> <img src={pic15} alt="" height="100%" width="100%" id="hovered"/></div>
-                    <div className="img box"> <img src={pic15} alt="" height="100%" width="100%" id="hovered"/></div>
+                    <div className="img box"> <img src={pic28} alt="" height="200%" width="100%" id="hovered"/></div>
+                    <div className="img box"> <img src={pic29} alt="" height="200%" width="100%" id="hovered" style={{position:"relative",top:"-18px"}}/></div>
                 </div>
             </Slider>
         </div>

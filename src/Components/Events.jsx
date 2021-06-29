@@ -1,10 +1,14 @@
 import { Typography } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core"; 
-
+import pic30 from "../media/pic30.png"
+import enthuse from "../media/enthuse.jpg"
+import futsal from "../media/futsal.jpeg"
 const styles=makeStyles({
     font:{
         fontFamily:"Avenir Light",
+        padding:"10px",
+        paddingTop:"0px"
     }
 })
 
@@ -28,8 +32,10 @@ const Events = () => {
                 </Grid>
                 <Grid item xs={3}>
                     <div style={{height:"100%",width:"100%",
-                    backgroundColor:"blue"}}>
-
+                    }}>
+                        <img src={pic30} alt="" width="100%"
+                        style={{marginTop:"20px",marginRight:"20px"}}
+                        />
                     </div>
                 </Grid>
                 <Grid item xs={2}>
@@ -42,8 +48,10 @@ const Events = () => {
                 </Grid>
                 <Grid item xs={3}>
                     <div style={{height:"100%",width:"100%",
-                    backgroundColor:"blue"}}>
-
+                    }}>
+                        <img src={enthuse} alt="" width="110%"
+                        style={{position:"relative",left:"-30px",top:"30px",borderRadius:"10px"}}
+                        />
                     </div>
                     
                 </Grid>
@@ -72,9 +80,9 @@ const Events = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={3}>
-                    <div style={{height:"100%",width:"100%",
-                    backgroundColor:"blue"}}>
-
+                    <div style={{height:"100%",width:"100%",}}>
+                        <img src={futsal} alt="" height="190px" width="100%"
+                        style={{borderRadius:"10px"}}/>
                     </div>
                 </Grid>
                 

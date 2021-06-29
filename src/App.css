@@ -39,6 +39,7 @@ body{
     height:75px;
     width:100%;
     background-repeat: no-repeat;
+    overflow: hidden;
     /* border: 1px solid black; */
 }
 .multi{
@@ -49,7 +50,7 @@ body{
     /* background-image: url(./media/trial.JPG); */
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: aquamarine;
+    background-color: gray;
 }
 #Layer_1{
     transform: scale(0.9);
