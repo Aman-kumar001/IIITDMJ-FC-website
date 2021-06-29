@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Home  from './Home'
-import Gallery  from './gallery'
+import Gallery  from './Gallery'
 import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import About from './About';
 import Events from './Events';
+import Achieve from './Achieve';
 import Footer from './Footer';
 const style=makeStyles({
   join:{
@@ -54,22 +55,35 @@ const Layout = () => {
 
            {/* LANDING PAGE */}
 
-
+           <a name="home" clasName={classes.anchor}>
+          <Home/>
+           </a>
            {/* ACHIEVEMENTS */}
-           <Home/>
-           {/* ABOUT */}
-           <About width={width}/>
+            <Achieve/>
 
+           {/* ABOUT */}
+           <a name="about" className={classes.anchor}>
+             <About/>
+           </a>
+           
            {/* FIXTURES(?) */}
 
+            {/* GALLERY */}
+           <a name="gallery" className={classes.anchor}>
+            <Gallery/>
+           </a>
 
            {/* EVENTS */}
-            <Events width={width}/>
+           <a name="events" className={classes.anchor}>
+           <Events/>
+           </a>
+            
+            
+           
 
-           {/* GALLERY */}
-           <Gallery width={width}/>
+           <Footer/>
+           {/* CONTACT */}
 
-           <Footer width={width}/>
            {/* <Button
             className={classes.join}
             variant="contained"

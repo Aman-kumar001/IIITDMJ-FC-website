@@ -29,7 +29,7 @@ img:{
     //right:"-45px",
     //bottom:"-5px",
     right:"0px",
-    bottom:"-20px",
+    bottom:"-0px",
     ['@media (min-width:960px)']: { // eslint-disable-line no-useless-computed-key
      right:"-50px",
    },
@@ -42,30 +42,35 @@ upper:{
   backgroundColor:"white",
   marginTop:"0px",
   overflow:"hidden",
-  paddingBottom:"25px"
+  paddingBottom:"25px",
+  fontFamily:"Avenir Light"
 },
 content:{
  marginTop:"20px",
  marginLeft:"20px",
  marginRight:"0px",
  position:"relative",
+ fontFamily:"Avenir Light",
  //border:"1px solid black"
 },
 inner_map:{
-  borderRadius:"25px",
+  borderRadius:"20px",
   width:"100%",
-  height:"380px"
+  height:"330px",
+  marginTop:"30px"
 },
  heading:{
    fontWeight:"normal",
    fontSize:"23px",
    position:"relative",
-   marginTop:"0px"
+   marginTop:"0px",
+   fontFamily:"Avenir Light",
  },
  span:{
    position:"absolute",
    marginTop:"20px",
-   fontStyle:"italic"
+   fontStyle:"italic",
+   fontFamily:"Avenir Light",
  }
 })
 const Footer = () =>{
@@ -110,9 +115,9 @@ return(
         </ListItem>
         <ListItem>
            <ListItemIcon>
-             <FacebookIcon fontSize="large"/>
-             <InstagramIcon fontSize="large"/>
-             <WhatsAppIcon fontSize="large"/>
+             <FacebookIcon fontSize="large" style={{marginTop:"15px"}}/>
+             <InstagramIcon fontSize="large" style={{marginTop:"15px"}}/>
+             <WhatsAppIcon fontSize="large" style={{marginTop:"15px"}}/>
              <img className={classes.img} src={logo}/>
            </ListItemIcon>
         </ListItem>

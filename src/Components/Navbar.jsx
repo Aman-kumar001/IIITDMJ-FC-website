@@ -1,119 +1,200 @@
-import React from 'react'
-import { Grid, makeStyles, List, Button, Typography } from '@material-ui/core'
-import logo from '../media/logo-football.svg'
+import React, {useState} from "react";
+import {
+  AppBar,
+  Toolbar,
+  Container,
+  Button,
+  Hidden,
+  Grid,
+  Typography,
+  Modal,
+  Fade,
+  Backdrop
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
+import Sidebar from "./Sidebar";
+import '../App.css';
+import logoFootball from "../media/logo-football.svg"
+
 const useStyles = makeStyles({
-    root:{
-        background:"#ddd",
-        // opacity:"0.1",
-        height:"100vh",
-        width:120,
-        position:"fixed",
-        zIndex:"100"
-    },
-    img:{
-        width:"100px",
-        margin: "20px 10px",
-        marginBottom:"20px"
-    },
-    iconList:{
-        display:"flex",
-        flexDirection:"column",
-        justifyContent:"space-around",
-        alignContent:"center",
-        // height:"60%",
-        height:"45%",
-        // border:"1px solid black",
-    },
-    icons:{
-        position:"relative",
-        justifyItems:"center",
-        // border:"1px solid black",
-        // marginBottom:"40px",
-        margin:"auto",
-        // height:"22%",
-        transition:"all 0.4s ease",
-        width:"85%",
-        zIndex:"100",
-        color:"white",
-        "&:hover":{
-            // background:"rgba(200,200,200,1)",
-            background:"white",
-            transform:"scale(1.2)",
-            "& span":{
-                visibility:"visible",
-                opacity:1,
-                transform:"translate(25px,-50%)",
-            }
-        }
-    },
-    label:{
-        position:"relative",
-        zIndex:"100",
-        backgroundImage: "linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0))",
-        position:"absolute",
-        top:"50%",
-        transform:"translate(-25px,-50%)",
-        zIndex:100,
-        padding:10,
-        visibility:"hidden",
-        opacity:0,
-        transition:"all 1s  ease",
+  navbar:{
 
+  },
+  navbarDisplayFlex: {
+    display: `flex`,
+    justifyContent: `space-between`,
+    fontFamily:"Avenir Light",
+  },
+  navbarButton:{
+    display: `flex`,
+    justifyContent: `center`,
+    fontFamily:"Avenir Light",
+  },
+  button:{
+    '&:hover':{
+      '& hr':{
+        transform: 'scale(1)',
+        transformOrigin:"left",
+        fontFamily:"Avenir Light",
+      }
     }
-})
-
+  },
+  underline:{
+    position:"relative",
+    top:-10,
+    marginBottom:-10,
+    color:"#FEF9EE",
+    transform:'scaleX(0)',
+    transformOrigin:"right",
+    transition:"transform 250ms ease-in",
+    fontFamily:"Avenir Light",
+  },
+  links:{
+    textDecoration: "none",
+    fontFamily:"Avenir Light",
+  },
+  logoSection:{
+    display:"flex",
+    flexWrap:"nowrap",
+    alignItems:"center",
+    width:"120%",
+    justifyContent:"space-around",
+    fontSize:"1.5em",
+    color:"white",
+    letterSpacing:1,
+    fontFamily:"Avenir Light",
+  },
+  logo:{
+    position:"relative",
+    width:70,
+    margin:"5px 0px",
+    marginRight:"-30px",
+    fontFamily:"Avenir Light",
+  },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily:"Avenir Light",
+  },
+  paper: {
+    background:"white",
+    boxShadow: 10,
+    padding: "2em",
+    width:"60%",
+    fontFamily:"Avenir Light",
+  },
+  navLabel:{
+    color:"white",
+    fontSize:"1.1em",
+    letterSpacing: 2, 
+    fontFamily:"Avenir Light",
+  }
+});
 
 const Navbar = () => {
-    const classes = useStyles()
-    return (
-        <div>
-            <Grid className={classes.root}>
-                <section className={classes.imgSection}>
-                    <img className={classes.img} src={logo}/>
-                </section>
-                <List className={classes.iconList}>
-                    <span className={classes.icons} >
-                        <box-icon name='face' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                About    
-                            </Typography>
-                        </span>
-                    </span>
-                    <span className={classes.icons}>
-                        <box-icon name='football' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                Events    
-                            </Typography>
-                        </span>
-                    </span>
-                    <span className={classes.icons}>
-                        <box-icon name='photo-album' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                Gallery    
-                            </Typography>
-                        </span>
-                    </span>
-                    <span className={classes.icons}>
-                        <box-icon name='terminal' size="lg"/>
-                        <span className={classes.label}>
-                            <Typography variant="h5">
-                                Contributors    
-                            </Typography>
-                        </span>
-                    </span>
-                </List>
+  const classes = useStyles();
 
-                <section className={classes.join}>
-                    <Button variant="outlinedd" color="Primary">
-                        Join Us
-                    </Button>
-                </section>
-            </Grid>
-        </div>
-    )
-}
+  const navs = [
+    {
+      id:1,
+      label:"About",
+      link:"#about"
+    },
+    {
+      id:2,
+      label:"Gallery",
+      link:"#gallery" 
+    },
+    {
+      id:3,
+      label:"Events",
+      link:"#events"
+    },
+  ]
+  const [open, setOpen] = useState(false);
 
-export default Navbar
+    const handleOpen = () => {
+      setOpen(true);
+    };
+
+    const handleClose = () => {
+      setOpen(false);
+    };
+
+    
+  return (
+        
+        <AppBar position="fixed">
+            <Toolbar className={classes.navbar}>
+                <Container maxWidth="xl" className={classes.navbarDisplayFlex}>
+                    <a  href="#home" className={classes.links}>
+                        <Typography variant="h4" color="secondary" className={classes.logoSection}  style={{fontFamily:"Avenir Light",
+                      fontWeight:"bold"}}>
+                            <img src={logoFootball} className={classes.logo}/>
+
+                            FOOTBALL CLUB IIITDM JABALPUR
+
+                        </Typography>
+                    </a>
+                    <Hidden smDown>
+                        <Grid className={classes.navbarButton}>
+
+                            {
+                                navs.map(nav => {
+                                    return (
+                                        <>  
+                                          <Button className={classes.button} color="secondary">
+                                              <a href={nav.link} className={classes.links}>
+                                                  <Typography variant="h5" className={classes.navLabel}>
+                                                      {nav.label}
+                                                  <hr className={classes.underline}/>
+                                                  </Typography>
+                                              </a>
+                                          </Button>
+                                        </>
+                                    )
+                                })
+                            }
+
+                            <Button className={classes.button} color="secondary" onClick={handleOpen}>
+                                <Typography variant="h5" className={classes.navLabel}>
+                                    Contirbutor
+                                    <hr className={classes.underline}/>
+                                </Typography>
+                            </Button>
+
+                        </Grid>
+
+
+                        <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open}
+                            onClose={handleClose}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                                timeout: 500,
+                            }}
+                        >
+                            <Fade in={open}>
+                                <div className={classes.paper}>
+                                    Hello There
+                                </div>
+                            </Fade>
+                        </Modal>
+
+
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Sidebar navs={navs} />
+                    </Hidden>
+                </Container>
+            </Toolbar>
+        </AppBar>
+  );
+};
+
+export default Navbar;
