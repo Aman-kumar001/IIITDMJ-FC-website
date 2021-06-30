@@ -19,8 +19,11 @@ import { makeStyles } from "@material-ui/core";
 import Sidebar from "./Sidebar";
 import '../App.css';
 import logoFootball from "../media/logo-football.svg";
-import worker from "../media/worker.jpg";
-
+import football from "../media/football2.jpg";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 const useStyles = makeStyles({
   navbar:{
 
@@ -81,6 +84,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily:"Avenir Light",
+    overflow:"scroll",
   },
   paper: {
     background:"#FEF9EE",
@@ -95,67 +99,54 @@ const useStyles = makeStyles({
     letterSpacing: 2,
     fontFamily:"Avenir Light",
   },
-
-  photoGrid:{
-      margin: "1em auto",
-      maxWidth: "1106px",
-      textAlign: "center",
-      '& li':{
-        border: "5px solid white",
-        display: "inline-block",
-        margin: "1em",
-        width: "289px",
-
-        '&:hover':{
-          '& figcaption':{
-            opacity:"1",
-          },
-          '& img':{
-            webkitTransform: "scale(1.4)",
-            mozTransform: "scale(1.4)",
-            transform: "scale(1.4)",
-          },
-        }
-      },
-
-      '& img':{
-        display: "block",
-        height: "auto",
-        maxWidth: "100%",
-        transition:"all 300ms"
-      },
-
-      '& figure':{
-        height: "163px",
-        overflow: "hidden",
-        position: "relative",
-        width: "289px",
-      },
-
-      '& figcaption':{
-        background: "rgba(0,0,0,0.8)",
-        color: "white",
-        display: "table",
-        height: "100%",
-        left: "0",
-        opacity: "0",
-        position: "absolute",
-        right: "0",
-        top: "0",
-        zIndex: "100",
-
-         '& p':{
-           display: "table-cell",
-           fontSize: "1.5em",
-           position: "relative",
-           top: "-40px",
-           width: "289px",
-           verticalAlign: "middle",
-         }
-      },
-
+  container2:{
+    height: "350px",
+   width: "300px",
+   boxShadow: "0 10px 20px black",
+   backgroundSize: "cover",
+   justifyContent: "center",
+   alignItems: "center",
+   textAlign: "center",
+   overflow: "hidden",
+   fontFamily: "'Abel', sansSerif",
+   marginRight:"10px"
+ },
+  // image:{
+  //   height:"100px",
+  //   width:"100px",
+  //   backgroundSize:"cover",
+  //   borderRadius:"50%",
+  //   border:"8 px solid white",
+  //   position:"relative",
+  //   top:"200px",
+  //   marginLeft:"170px",
+  //   boxShadow: "0 2px 15px rgb(58, 54, 54)",
+  //   transform: "rotate(-20deg)",
+  // },
+  shape:  {
+    height: "180px",
+    width: "400px",
+    backgroundColor: "black",
+    marginlLeft: "-20px",
+    position: "relative",
+    top: "-40px",
+    boxShadow: "0 2px 15px black",
+    transform: "rotate(25deg)",
   },
-
+  h3:{
+    marginBottom: "10px",
+    fontFamily: "'Montserrat', sansSerif",
+  },
+  title2:{
+    color: "rgb(105, 100, 109)",
+  },
+  icons:{
+    marginTop:"15px"
+  },
+  main:{
+    display:"flex",
+    justifyContent:"center",
+  }
 });
 
 const TabPanel = (props) => {
@@ -292,70 +283,114 @@ const Navbar = () => {
                                     </Tabs>
                                   </AppBar>
                                   <TabPanel value={value} index={0}>
-                                  <ul className={classes.photoGrid}>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Kartik"/>
-                                             <figcaption><p>Aman Kumar</p></figcaption>
-                                           </figure>
-                                       </li>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Harshit"/>
-                                             <figcaption><p>Jayraj Rathod</p></figcaption>
-                                           </figure>
-                                       </li>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Adarsh"/>
-                                             <figcaption><p>Kartik Singh Chuphal</p></figcaption>
-                                           </figure>
-                                       </li>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Kartik"/>
-                                             <figcaption><p>Ritik Roshan Nagadev</p></figcaption>
-                                           </figure>
-                                       </li>
-                                    </ul>
+                                   <div className={classes.main}>
+                                      <div className={classes.container2}>
+                                         <div className={classes.shape}>
+                                            <div className={classes.image}>
+                                            </div>
+                                         </div>
+                                         <h3>Aman Kumar</h3>
+                                         <h3 className={classes.title2}>2019364</h3>
+                                         <div className={classes.icons}>
+                                          <LinkedInIcon/>
+                                          <FacebookIcon/>
+                                          <InstagramIcon/>
+                                          <WhatsAppIcon/>
+                                         </div>
+                                      </div>
+                                      <div className={classes.container2}>
+                                         <div className={classes.shape}>
+                                            <div className={classes.image}>
+                                            </div>
+                                         </div>
+                                         <h3>Jayraj Rathod</h3>
+                                         <h3 className={classes.title2}>2019074</h3>
+                                         <div className={classes.icons}>
+                                          <LinkedInIcon/>
+                                          <FacebookIcon/>
+                                          <InstagramIcon/>
+                                          <WhatsAppIcon/>
+                                         </div>
+                                      </div>
+                                      <div className={classes.container2}>
+                                         <div className={classes.shape}>
+                                            <div className={classes.image}>
+                                            </div>
+                                         </div>
+                                         <h3>Kartik Singh Chuphal</h3>
+                                         <h3 className={classes.title2}>2019077</h3>
+                                         <div className={classes.icons}>
+                                          <LinkedInIcon/>
+                                          <FacebookIcon/>
+                                          <InstagramIcon/>
+                                          <WhatsAppIcon/>
+                                         </div>
+                                      </div>
+                                    </div>
                                   </TabPanel>
                                   <TabPanel value={value} index={1}>
-                                  <ul className={classes.photoGrid}>
-                                      <li>
-                                          <figure>
-                                            <img src={worker} height="180" width="320" alt="Kartik"/>
-                                            <figcaption><p>Vinay Priyadarshan</p></figcaption>
-                                          </figure>
-                                      </li>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Kartik"/>
-                                             <figcaption><p>Mudit Verma</p></figcaption>
-                                           </figure>
-                                       </li>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Harshit"/>
-                                             <figcaption><p>Shubhang Verma</p></figcaption>
-                                           </figure>
-                                       </li>
-                                    </ul>
+                                  <div className={classes.main}>
+                                     <div className={classes.container2}>
+                                        <div className={classes.shape}>
+                                           <div className={classes.image}>
+                                           </div>
+                                        </div>
+                                        <h3>Vinay Priyadarshan</h3>
+                                        <h3 className={classes.title2}>20bds064</h3>
+                                        <div className={classes.icons}>
+                                         <LinkedInIcon/>
+                                         <FacebookIcon/>
+                                         <InstagramIcon/>
+                                         <WhatsAppIcon/>
+                                        </div>
+                                     </div>
+                                     <div className={classes.container2}>
+                                        <div className={classes.shape}>
+                                           <div className={classes.image}>
+                                           </div>
+                                        </div>
+                                        <h3>Ritik Roshan Nagdeve</h3>
+                                        <h3 className={classes.title2}>2018361</h3>
+                                        <div className={classes.icons}>
+                                         <LinkedInIcon/>
+                                         <FacebookIcon/>
+                                         <InstagramIcon/>
+                                         <WhatsAppIcon/>
+                                        </div>
+                                     </div>
+                                   </div>
                                   </TabPanel>
                                   <TabPanel value={value} index={2}>
-                                  <ul className={classes.photoGrid}>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Kartik"/>
-                                             <figcaption><p>Mudit Tripathi</p></figcaption>
-                                           </figure>
-                                       </li>
-                                       <li>
-                                           <figure>
-                                             <img src={worker} height="180" width="320" alt="Harshit"/>
-                                             <figcaption><p>Himdari Maheshwari</p></figcaption>
-                                           </figure>
-                                       </li>
-                                    </ul>
+                                  <div className={classes.main}>
+                                     <div className={classes.container2}>
+                                        <div className={classes.shape}>
+                                           <div className={classes.image}>
+                                           </div>
+                                        </div>
+                                        <h3>Mudit Tripathi </h3>
+                                        <h3 className={classes.title2}>2018153</h3>
+                                        <div className={classes.icons}>
+                                         <LinkedInIcon/>
+                                         <FacebookIcon/>
+                                         <InstagramIcon/>
+                                         <WhatsAppIcon/>
+                                        </div>
+                                     </div>
+                                     <div className={classes.container2}>
+                                        <div className={classes.shape}>
+                                           <div className={classes.image}>
+                                           </div>
+                                        </div>
+                                        <h3>Himadri Maheshwari</h3>
+                                        <h3 className={classes.title2}>20bcs101</h3>
+                                        <div className={classes.icons}>
+                                         <LinkedInIcon/>
+                                         <FacebookIcon/>
+                                         <InstagramIcon/>
+                                         <WhatsAppIcon/>
+                                        </div>
+                                     </div>
+                                   </div>
                                   </TabPanel>
                                 </div>
                             </Fade>
