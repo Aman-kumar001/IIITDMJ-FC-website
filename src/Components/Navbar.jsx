@@ -126,19 +126,20 @@ const useStyles = makeStyles({
   shape:  {
     height: "180px",
     width: "400px",
-    backgroundColor: "black",
+    backgroundColor: "#7989ff",
     marginlLeft: "-20px",
     position: "relative",
     top: "-40px",
     boxShadow: "0 2px 15px black",
     transform: "rotate(25deg)",
   },
-  h3:{
+   h3:{
     marginBottom: "10px",
     fontFamily: "'Montserrat', sansSerif",
+    color:"#79b3ff",
   },
   title2:{
-    color: "rgb(105, 100, 109)",
+    color: " rgb(105, 100, 109)",
   },
   icons:{
     marginTop:"15px"
@@ -146,6 +147,9 @@ const useStyles = makeStyles({
   main:{
     display:"flex",
     justifyContent:"center",
+  },
+  headingContri:{
+    color:"black"
   }
 });
 
@@ -289,13 +293,12 @@ const Navbar = () => {
                                             <div className={classes.image}>
                                             </div>
                                          </div>
-                                         <h3>Aman Kumar</h3>
+                                         <h3 className={classes.headingContri}>Aman Kumar</h3>
                                          <h3 className={classes.title2}>2019364</h3>
                                          <div className={classes.icons}>
-                                          <LinkedInIcon/>
-                                          <FacebookIcon/>
-                                          <InstagramIcon/>
-                                          <WhatsAppIcon/>
+                                         <LinkedInIcon color="primary"/>
+                                         <FacebookIcon color="primary"/>
+                                         <InstagramIcon color="secondary"/>
                                          </div>
                                       </div>
                                       <div className={classes.container2}>
@@ -303,13 +306,12 @@ const Navbar = () => {
                                             <div className={classes.image}>
                                             </div>
                                          </div>
-                                         <h3>Jayraj Rathod</h3>
+                                        <h3 className={classes.headingContri}>Jayraj Rathod</h3>
                                          <h3 className={classes.title2}>2019074</h3>
                                          <div className={classes.icons}>
-                                          <LinkedInIcon/>
-                                          <FacebookIcon/>
-                                          <InstagramIcon/>
-                                          <WhatsAppIcon/>
+                                         <LinkedInIcon color="primary"/>
+                                         <FacebookIcon color="primary"/>
+                                         <InstagramIcon color="secondary"/>
                                          </div>
                                       </div>
                                       <div className={classes.container2}>
@@ -317,13 +319,12 @@ const Navbar = () => {
                                             <div className={classes.image}>
                                             </div>
                                          </div>
-                                         <h3>Kartik Singh Chuphal</h3>
+                                         <h3 className={classes.headingContri}>Kartik Singh Chuphal</h3>
                                          <h3 className={classes.title2}>2019077</h3>
                                          <div className={classes.icons}>
-                                          <LinkedInIcon/>
-                                          <FacebookIcon/>
-                                          <InstagramIcon/>
-                                          <WhatsAppIcon/>
+                                         <LinkedInIcon color="primary"/>
+                                         <FacebookIcon color="primary"/>
+                                         <InstagramIcon color="secondary"/>
                                          </div>
                                       </div>
                                     </div>
@@ -335,13 +336,12 @@ const Navbar = () => {
                                            <div className={classes.image}>
                                            </div>
                                         </div>
-                                        <h3>Vinay Priyadarshan</h3>
+                                        <h3 className={classes.headingContri}>Vinay Priyadarshan</h3>
                                         <h3 className={classes.title2}>20bds064</h3>
                                         <div className={classes.icons}>
-                                         <LinkedInIcon/>
-                                         <FacebookIcon/>
-                                         <InstagramIcon/>
-                                         <WhatsAppIcon/>
+                                        <LinkedInIcon color="primary"/>
+                                        <FacebookIcon color="primary"/>
+                                        <InstagramIcon color="secondary"/>
                                         </div>
                                      </div>
                                      <div className={classes.container2}>
@@ -349,13 +349,12 @@ const Navbar = () => {
                                            <div className={classes.image}>
                                            </div>
                                         </div>
-                                        <h3>Ritik Roshan Nagdeve</h3>
+                                        <h3 className={classes.headingContri}>Ritik Roshan Nagdeve</h3>
                                         <h3 className={classes.title2}>2018361</h3>
                                         <div className={classes.icons}>
-                                         <LinkedInIcon/>
-                                         <FacebookIcon/>
-                                         <InstagramIcon/>
-                                         <WhatsAppIcon/>
+                                        <LinkedInIcon color="primary"/>
+                                        <FacebookIcon color="primary"/>
+                                        <InstagramIcon color="secondary"/>
                                         </div>
                                      </div>
                                    </div>
@@ -367,13 +366,12 @@ const Navbar = () => {
                                            <div className={classes.image}>
                                            </div>
                                         </div>
-                                        <h3>Mudit Tripathi </h3>
+                                        <h3 className={classes.headingContri}>Mudit Tripathi </h3>
                                         <h3 className={classes.title2}>2018153</h3>
                                         <div className={classes.icons}>
-                                         <LinkedInIcon/>
-                                         <FacebookIcon/>
-                                         <InstagramIcon/>
-                                         <WhatsAppIcon/>
+                                        <LinkedInIcon color="primary"/>
+                                        <FacebookIcon color="primary"/>
+                                        <InstagramIcon color="secondary"/>
                                         </div>
                                      </div>
                                      <div className={classes.container2}>
@@ -381,13 +379,12 @@ const Navbar = () => {
                                            <div className={classes.image}>
                                            </div>
                                         </div>
-                                        <h3>Himadri Maheshwari</h3>
+                                        <h3 className={classes.headingContri}>Himadri Maheshwari</h3>
                                         <h3 className={classes.title2}>20bcs101</h3>
                                         <div className={classes.icons}>
-                                         <LinkedInIcon/>
-                                         <FacebookIcon/>
-                                         <InstagramIcon/>
-                                         <WhatsAppIcon/>
+                                        <LinkedInIcon color="primary"/>
+                                        <FacebookIcon color="primary"/>
+                                        <InstagramIcon color="secondary"/>
                                         </div>
                                      </div>
                                    </div>
